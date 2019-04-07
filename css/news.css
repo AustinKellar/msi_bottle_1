@@ -21,3 +21,41 @@ h1, h2, h3, h4, h5 {
 .main-content {
     padding: 30px;
 }
+
+.articles-container {
+    padding-top: 50px;
+}
+
+.col {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.italics {
+    font-style: italic;
+    font-size: 21px;
+}
+
+.purple-box {
+    background-color: rgb(145, 76, 145);
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+.article {
+    margin-top: 20px;
+    font-size: 21px;
+}
+
+.penguin-image {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 100px;
+}
