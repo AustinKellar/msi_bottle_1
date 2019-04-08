@@ -1,3 +1,7 @@
+/* 
+    by default, header tags have a small margin, which makes them annoying to work with.
+    here, I make sure they don't have margins
+*/
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
@@ -5,17 +9,18 @@ h1, h2, h3, h4, h5 {
 .top-bar {
     height: 110px;
     width: 100%;
-    position: static;
-    top: 0;
+
+    /* 
+        use a flex box to make sure the contents of the box are spaced as far apart as possible
+        and vertically aligned at the bottom
+    */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.white-text {
-    color: white;
+    /* 15 pixels of space between the text and the edge of the box */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main-content {
@@ -23,27 +28,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .articles-container {
-    padding-top: 50px;
+    margin-top: 40px;
 }
 
-.col {
+.padded-column {
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.italics {
-    font-style: italic;
-    font-size: 21px;
-}
-
-.purple-box {
-    background-color: rgb(145, 76, 145);
-    padding: 20px;
-    border: 2px solid black;
-}
-
-.margin-top {
-    margin-top: 40px;
 }
 
 .article {
@@ -51,11 +41,12 @@ h1, h2, h3, h4, h5 {
     font-size: 21px;
 }
 
-.penguin-image {
-    margin-top: 20px;
-    width: 100%;
+.italics {
+    font-style: italic;
 }
 
-.button-container {
-    margin-top: 100px;
+.purple-box {
+    background-color: rgb(145, 76, 145);
+    padding: 20px;
+    border: 2px solid black;
 }
